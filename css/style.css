@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* ■■■■■ ШРИФТЫ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* ■■■■■ ОБНУЛЯЮЩИЕ СТИЛИ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+body {
+  margin: 0;
+}
+body * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+body *::before, body *::after {
+  box-sizing: border-box;
+}
+
+header, nav, main, footer, section, aside,
+img, video, picture, source, iframe,
+label, summary, canvas, svg {
+  display: block;
+}
+
+ul, ol, li {
+  display: block;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input, textarea, button, select {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button, select {
+  cursor: pointer;
+}
+
+/* ■■■■■ БАЗОВЫЕ СТИЛИ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-tap-highlight-color: transparent;
+}
+body.body--lock {
+  overflow: hidden;
+}
+body.body--load {
+  overflow: visible;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.none {
+  display: none !important;
+}
+
+/* ■■■■■ СТИЛИ САЙТА ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.block {
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.button {
+  padding: 0.8em 2em;
+  font-size: 30px;
+  background-color: hsl(300deg, 50%, 50%);
+  color: #fff;
+  transition: 100ms;
+}
+@media (any-hover: hover) {
+  .button:hover {
+    background-color: hsl(300deg, 50%, 55%);
+  }
+  .button:active {
+    background-color: hsl(300deg, 50%, 45%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
